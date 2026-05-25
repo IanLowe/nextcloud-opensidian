@@ -1,7 +1,7 @@
 # Opensidian for Nextcloud
 
-<img alt="nextcloud-opensidian-editor" src="https://github.com/user-attachments/assets/ec5eeeb1-277c-4795-8881-657c4a1518b8" />
-<img alt="nextcloud-opensidian-graph" src="https://github.com/user-attachments/assets/611068bc-aeb4-4579-b9ae-88e8240af68e" />
+<img alt="nextcloud-opensidian-editor" src="https://github.com/user-attachments/assets/83ec2dea-d40c-4997-a2fd-6c526bee18c2" />
+<img alt="nextcloud-opensidian-graph" src="https://github.com/user-attachments/assets/99f6d615-6542-4881-a39f-a95ee7eb6e85" />
 
 **Opensidian** turns any Nextcloud folder of Markdown files into a linked knowledge base. Write notes in a full-featured editor, connect them with `[[Wikilinks]]`, visualise your knowledge as an interactive graph, and chat with your notes using any OpenAI-compatible AI - all without leaving Nextcloud.
 
