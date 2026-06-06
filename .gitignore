@@ -1,0 +1,9 @@
+# Node.js dependencies (rebuild via: npm ci)
+js/node_modules/
+
+# Built bundle (rebuild via: npm run build)
+js/dist/
+
+# OS artifacts
+.DS_Store
+Thumbs.db

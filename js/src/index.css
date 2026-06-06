@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Light fallbacks — JS (themeStore) overrides these immediately at load time
+ * via element.style.setProperty(), which has higher specificity than any rule.
+ * --color-accent is not set by JS so it reads from Nextcloud's primary color.
+ */
+:root {
+  --color-base:    #ffffff;
+  --color-surface: #ededed;
+  --color-text:    #222222;
+  --color-muted:   #6b6b6b;
+  --color-accent:  var(--color-primary-element, #0082c9);
+}
+
+#opensidian-root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--color-base);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: var(--font-size, 16px);
+  box-sizing: border-box;
+}
+
+/* Scoped scrollbar styling */
+#opensidian-root ::-webkit-scrollbar { width: 6px; height: 6px; }
+#opensidian-root ::-webkit-scrollbar-track { background: transparent; }
+#opensidian-root ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+
+#opensidian-root input,
+#opensidian-root textarea { color: var(--color-text); }
+
+/* CodeMirror */
+.cm-editor { height: 100%; font-size: var(--font-size, 16px); }
+.cm-scroller { overflow: auto; font-family: "JetBrains Mono", "Fira Code", monospace; }
+
+/* Markdown preview */
+.markdown-preview { padding: 1.5rem; max-width: 720px; line-height: 1.7; overflow-y: auto; }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3 { color: var(--color-accent); margin-top: 1.5em; }
+.markdown-preview code { background: var(--color-surface); padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+.markdown-preview pre { background: var(--color-surface); padding: 1em; border-radius: 6px; overflow-x: auto; }
+.markdown-preview a { color: var(--color-accent); cursor: pointer; text-decoration: underline; }
+.markdown-preview blockquote { border-left: 3px solid var(--color-accent); margin-left: 0; padding-left: 1em; color: var(--color-muted); }
